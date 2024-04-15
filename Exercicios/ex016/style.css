@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #10454F;
+}
+
+
+h1{
+    background-color: #BDE038;
+    text-align: center;
+    text-shadow: 12px 10px 10px rgba(0, 0, 0, 0.647); /*lateral,baixo e espalhamento   */
+
+}
+
+p{
+    text-align: justify;
+
+}
+body{
+   background-image: linear-gradient(to right, #10454F, #506266, #818274);
+}
+    main{ /*no exercicio, esta formando uma caixinha de cores, que eu posso usar em um site futuramente essa ideia, ex div lala, e configurar no css*/
+        background-color: white;
+        width: 600px;
+        padding: 9px; /*o padding é como se fosse deixar as bordas do elemento que esta sendo utilizavel mais astetic*/
+        margin: auto; /* diferente do text align, toda vez que voce puxar a barra da tela, ele vai permanencer no meio*/
+        border-radius: 30px; /* nessa tag border-radius ela deixa as bordas do elemento mais em um formato mais arredondado*/
+        box-shadow: 10px 10px 10px #A3AB78; /*ou caixinha de sombras, como o nome diz ele cria uma sombra em volta da caixa que esta sendo criada*/
+        height: -700px;
+    }
+    .sorv{
+        background: url(sorvete.Mp4.mp4);
+        width: 100%;
+    }

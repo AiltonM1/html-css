@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title> Midias em HTML5</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Imagens dinamica</h1>
+    <p> tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador </p>
+    <picture> <!-- coloque primeiro as imagens, dentro de uma pasta dentro da pasta, logo apos comece com "img, e a imagem grande, logo apos, a source da imagem media, e por fim a imagem P"-->
+        <source media="(max-width: 850px)" srcset="imagens/imagemP.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagemM.png" type="image/png">
+        <img src="imagens/ImagemG.png" alt="imagem flexivel">
+    </picture>
+</body>
+<h1>Reproduzindo audio</h1>
+<p><strong>  vamos aprender a reproduzir a reproduzir audios em html5</strong></p>
+<audio preload="metadata"controls loop><!-- controls "ira aparecer, um menuzinho para controlar sua musica"  "loop" como o nome ja diz, ira tocar infinitamente a musica-->
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <p>infelizmente seu navegador nao pode escutar audio <a href="midia/guanacast-33.mp3">clique aqui para baixar o conteudo mp3</a></p>
+    <video src="midia/pexels-rodnae-productions-6183107 (1080p).mp4"></video>
+</audio>
+</html>

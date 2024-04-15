@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Videos com html5</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        h1{ 
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        p{
+            color: aliceblue;
+            font-family: arial;
+            font-size: 20px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <h1> inserindo videos hospedados localmente</h1>
+    <p> <strong>esse video esta hospedado no meu proprio servidor</strong> </p>
+    
+    <video controls; muted autoplay loop width="560" height="315" poster="imagens/sorvete.png"> <!-- muito cuidado para não errar a source, "src type. as sources servem para hospedar varios videos para funcionar em determinados navegadores" a a tag "poster" ela serve para como se fosse uma thumb nail -->
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv.ogv" type="video/ogv">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm"> <!-- lembrando que a ordem das sources, faz total diferença, o navegador vai tentando fazer rodar uma por uma--> <!-- avisar ao cliente que ele pode ter, problema, ele pode gerar muito trafego de dados-->
+        <p>Seu navegador não tem compatibilidade com reprodução de video.</p>
+    </video>
+    <h1> inserindo videos do you tube</h1> <!-- quando cliente utiliza o play de video do nosso video que esta instalado do nosso servidor gera um custo de banda, o que pode causar lentidão do nosso site. Por outro lado se ele utilizar um link do yt, ele não gasta nossos dados, gasta o do yt, assim deixando o site normalmente-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=Korqzl_cy0xyQoaV&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1> <a href="https://vimeo.com" target="_blank" rel="external">inserindo videos do vimeo</a></h1><!-- o vimeo ele tem uma otima qualidade de videos, porem se o cliente tiver uma internet ruim ele vai dar uma travada-->     
+
+    <!-- o vimeo ele não tem propaganda, isso é uma baita ideia para oferecer para seu cliente-->
+    <iframe src="https://player.vimeo.com/video/658536943?h=d53f23add7" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
