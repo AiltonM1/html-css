@@ -1,0 +1,8 @@
+body{
+    height: 100vh;
+    border: 2px dashed black;
+    background-image: url(img/github-g.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
